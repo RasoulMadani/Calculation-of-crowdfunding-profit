@@ -13,22 +13,23 @@ public class Main {
         int n = 4; // # Number of compounding periods per year
         int t = 1; // # Number of years
         int year = 1403;
+        //615,000,000;
+        // الباقی ۳۸۵
 
         System.out.println("\n\n\n\n\n");
 
-        calc(572_000_000L, 0.40, 4, 30, 1403, 100_000_000, 30_000_000);
-
+        calc(616_500_000L, 0.46,  30, 1403, 100_000_000, 30_000_000,0);
         System.out.println("\n\n\n\n\n");
 
+        calc(24_000_000L, 0.46,  30, 1403, 0, 0,24_000_000);
 
-        calc(1_000_000_000L, 0.40, 4, 30, 1403, 100_000_000, 20_000_000);
 
         System.out.println("\n\n\n\n\n");
 
 
     }
 
-    public static void calc(long P, double rate, int n, int t, int year, int bardasht, int nerkheRoshd) {
+    public static void calc(long P, double rate, int t, int year, int bardasht, int nerkheRoshd,int afzodan) {
         DecimalFormat formatter = new DecimalFormat("#,###");
         String priceFormat = formatter.format(P);
         //# Compound interest formula
@@ -49,6 +50,7 @@ public class Main {
             } else {
                 nextPrice = result;
             }
+            nextPrice = nextPrice + afzodan;
 
             sood = (long) sood;
             String soodFormat = formatter.format(sood);
@@ -59,7 +61,7 @@ public class Main {
             // Format the number with commas
             priceFormat = formatter.format(finalAmount);
             System.out.println();
-            System.out.println(STR."\{++year} \{priceFormat} Toman ....-> sood = \{soodFormat} Toman   bardasht ...-> \{formatter.format(bardasht)}");
+            System.out.println(STR."\{++year} \{priceFormat} Toman ....-> sood = \{soodFormat} Toman   bardasht ...-> \{formatter.format(bardasht)} Toman  afzodan...-> \{formatter.format(afzodan)}");
             String nextPriceFormat = formatter.format(nextPrice);
 
             System.out.println(STR." nextPrice \{nextPriceFormat}");

@@ -15,13 +15,12 @@ public class Main {
 
         System.out.println("\n\n\n\n\n");
 
-        calc(6_00_000_000, 0.40, 4, 1, 1403);
+        calc(572_000_000, 0.40, 4, 1, 1403);
 
         System.out.println("\n\n\n\n\n");
+
         calc(1_000_000_000, 0.40, 4, 1, 1403);
 
-        System.out.println("\n\n\n\n\n");
-        calc(2_000_000_000, 0.40, 4, 1, 1403);
     }
 
     public static void calc(int P, double r, int n, int t, int year) {
