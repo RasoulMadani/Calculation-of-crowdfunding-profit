@@ -16,15 +16,22 @@ public class Main {
         //615,000,000;
         // الباقی ۳۸۵
 
-        System.out.println("\n\n\n\n\n");
-
-        calc(616_500_000L, 0.46,  30, 1403, 100_000_000, 30_000_000,0);
-        System.out.println("\n\n\n\n\n");
-
-        calc(24_000_000L, 0.46,  30, 1403, 0, 0,24_000_000);
-
 
         System.out.println("\n\n\n\n\n");
+
+        calc(963_500_000L, 0.43,  30, 1403, 0, 0,1_000_000_000);
+
+
+
+        System.out.println("\n\n\n\n\n");
+
+        calc(928_000_000L, 0.42,  30, 1403, 0, 0,0);
+
+
+
+        System.out.println("\n\n\n\n\n");
+
+        calc(2_000_000_000L, 0.42,  10, 1403, 0, 0,0);
 
 
     }
