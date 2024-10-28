@@ -19,7 +19,7 @@ public class Main {
 
         System.out.println("\n\n\n\n\n");
 
-        calc(963_500_000L, 0.43,  30, 1403, 0, 0,1_000_000_000);
+        calc(994_500_000L, 0.43,  30, 1403, 0, 0,5_00_000_000);
 
 
 
@@ -60,7 +60,9 @@ public class Main {
             nextPrice = nextPrice + afzodan;
 
             sood = (long) sood;
+            Double soodPerMonth = sood/12;
             String soodFormat = formatter.format(sood);
+            String soodPerMonthFormat = formatter.format(soodPerMonth);
 
             // Convert to a long to remove decimals
             long finalAmount = (long) result;
@@ -68,7 +70,7 @@ public class Main {
             // Format the number with commas
             priceFormat = formatter.format(finalAmount);
             System.out.println();
-            System.out.println(STR."\{++year} \{priceFormat} Toman ....-> sood = \{soodFormat} Toman   bardasht ...-> \{formatter.format(bardasht)} Toman  afzodan...-> \{formatter.format(afzodan)}");
+            System.out.println(STR."\{++year} \{priceFormat} Toman ....-> soodDarSal = \{ soodFormat} Toman    soodDarMath ...-> \{ soodPerMonthFormat}    bardasht ...-> \{ formatter.format(bardasht)} Toman  afzodan...-> \{ formatter.format(afzodan)}");
             String nextPriceFormat = formatter.format(nextPrice);
 
             System.out.println(STR." nextPrice \{nextPriceFormat}");
