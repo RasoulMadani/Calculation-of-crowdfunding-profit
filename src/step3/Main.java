@@ -19,19 +19,19 @@ public class Main {
 
         System.out.println("\n\n\n\n\n");
 
-        calc(994_500_000L, 0.43,  30, 1403, 0, 0,5_00_000_000);
+        calc(994_500_000L, 0.43,  30, 1403, 0, 0,300_000_000);
 
 
 
         System.out.println("\n\n\n\n\n");
 
-        calc(928_000_000L, 0.42,  30, 1403, 0, 0,0);
+        calc(1_000_000_000L, 0.42,  30, 1403, 0, 0,360_000_000);
 
 
 
         System.out.println("\n\n\n\n\n");
 
-        calc(2_000_000_000L, 0.42,  10, 1403, 0, 0,0);
+        calc(1_000_000L, 0.42,  30, 1373, 0, 0,0);
 
 
     }
@@ -70,7 +70,7 @@ public class Main {
             // Format the number with commas
             priceFormat = formatter.format(finalAmount);
             System.out.println();
-            System.out.println(STR."\{++year} \{priceFormat} Toman ....-> soodDarSal = \{ soodFormat} Toman    soodDarMath ...-> \{ soodPerMonthFormat}    bardasht ...-> \{ formatter.format(bardasht)} Toman  afzodan...-> \{ formatter.format(afzodan)}");
+            System.out.println(STR."\{++year} \{priceFormat} Toman ....->    soodDarMath ...-> \{ soodPerMonthFormat}    soodDarSal = \{ soodFormat} Toman     bardasht ...-> \{ formatter.format(bardasht)} Toman  afzodan...-> \{ formatter.format(afzodan)}");
             String nextPriceFormat = formatter.format(nextPrice);
 
             System.out.println(STR." nextPrice \{nextPriceFormat}");
